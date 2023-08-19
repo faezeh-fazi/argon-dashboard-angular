@@ -12,6 +12,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
+import { UsersComponent } from './pages/users/users.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import { MockService } from './services/mock.service';
 
 
 @NgModule({
@@ -27,9 +31,9 @@ import { ComponentsModule } from './components/components.module';
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
   ],
-  providers: [],
+  providers: [MockService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
